@@ -1,0 +1,50 @@
+
+<div class="lg:w-[321px] lg:h-screen bg-[#5159a525] hidden lg:block px-4 py-1">
+  <div class="flex flex-col">
+    <div class="h-52 border border-[#ffffff2f] rounded-md">
+      <!-- maps -->
+    </div>
+    <div class="p-3 flex justify-between items-center">
+      <p class="text-white text-2xl opacity-90">{{carData.carBrand +" "+carData.carModel}}</p>
+      <span class="text-[#ffffffc2]">
+        <i class="fa-solid fa-heart"></i> 85%
+      </span>
+    </div>
+    <div class="flex-1 grid grid-cols-2 grid-rows-2 gap-1">
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-gauge text-lg opacity-50"></i>
+        <p class="font-light text-xs">Speed-up</p>
+        <p class="text-lg opacity-80">{{carData.maxSpeed}} km/h</p>
+      </div>
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-road text-lg opacity-50"></i>
+        <p class="font-light text-xs">Max range</p>
+        <p class="text-lg opacity-80">{{carData.maxSpeed}} km</p>
+      </div>
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-palette text-lg opacity-50"></i>
+        <p class="font-light text-xs">Color</p>
+        <p class="text-sm opacity-80">{{carData.carColor}}</p>
+      </div>
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-gears text-xl opacity-50"></i>
+        <p class="font-light text-xs">Manufacturing year</p>
+        <p class="text-lg opacity-80">{{carData.yearOfManufac}}</p>
+      </div>
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-building text-lg opacity-50"></i>
+        <p class="font-light text-xs">Renter</p>
+        <p class="text-lg opacity-80">{{carData.renter.renterName}}</p>
+      </div>
+      <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
+        <i class="fa-solid fa-location-dot text-lg opacity-50"></i>
+        <p class="font-light text-xs">Adrress</p>
+        <p class="text-lg opacity-80">{{carData.renter.renterCity}}</p>
+      </div>
+      <div class="col-span-2 bg-[#ffffff2f] rounded-md p-2 m-2 flex justify-between items-center">
+        <p class="text-lg opacity-80 text-[#ffffffb6]">{{carData.pricePerDay}} Dh/day</p>
+        <button class="border-none bg-slate-400 text-[#01073E] p-2 rounded-md font-bold">Book Now</button>
+      </div>
+    </div>
+  </div>
+</div>

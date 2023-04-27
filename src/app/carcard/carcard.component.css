@@ -1,0 +1,5 @@
+input[type="radio"]:checked + label > div {
+  background-color: #ffffff25;
+  scale: 0.98;
+  box-shadow: rgba(0, 162, 255, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

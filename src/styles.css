@@ -1,38 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;300&display=swap');
-*{
-    font-family: 'Outfit';
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;300&display=swap");
+* {
+  font-family: "Outfit";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom,#6C92CE,#6D428B);
+  background-image: linear-gradient(to bottom, #6c92ce, #6d428b);
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #121b6840;
 }
 .gradient-bg-welcome {
-    background-color:#01073E;
-    background-image: 
-      radial-gradient(at 0% 0%, #030835 0, transparent 50%), 
-      radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 30%), 
-      radial-gradient(at 70% 0%, #040c51b4 0, transparent 80%), 
-      radial-gradient(at 90% 0%, #5d44b16b 0, transparent 40%), 
-      radial-gradient(at 100% 0%, #cf55dd4d 0, transparent 50%),
-      radial-gradient(at 0% 0%, #990aa3 0, transparent 70%),
-      radial-gradient(at 100% 100%, #05154660 0, transparent 50%),
-      /**/
-      radial-gradient(at 100% 30%, #632cbb70 0, transparent 40%), 
-      radial-gradient(at 100% 0%, #cf55dd4d 0, transparent 50%),
-      radial-gradient(at 50% 100%, #44a4f350 0, transparent 70%),
-      radial-gradient(at 20% 20%, #dc4eff4a 0, transparent 100%);
-    background-repeat: no-repeat;
+  background-color: #01073e;
+  background-image: radial-gradient(at 0% 0%, #030835 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 30%),
+    radial-gradient(at 70% 0%, #040c51b4 0, transparent 80%),
+    radial-gradient(at 90% 0%, #5d44b16b 0, transparent 40%),
+    radial-gradient(at 100% 0%, #cf55dd4d 0, transparent 50%),
+    radial-gradient(at 0% 0%, #990aa3 0, transparent 70%),
+    radial-gradient(at 100% 100%, #05154660 0, transparent 50%),
+    radial-gradient(at 100% 30%, #632cbb70 0, transparent 40%),
+    radial-gradient(at 100% 0%, #cf55dd4d 0, transparent 50%),
+    radial-gradient(at 50% 100%, #44a4f350 0, transparent 70%),
+    radial-gradient(at 20% 20%, #dc4eff4a 0, transparent 100%);
+  background-repeat: no-repeat;
 }
 @tailwind base;
-html{
+html {
   scroll-behavior: smooth;
 }
 @tailwind components;

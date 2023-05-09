@@ -4,9 +4,11 @@
       class="fa-solid fa-magnifying-glass mx-3 text-[15px] text-[#ffffffd7]"
     ></i>
     <input
+    (keyup)="search($event)"
       type="text"
       class="border-none bg-transparent outline-none text-white"
       placeholder="Search a car..."
+      value=""
     />
   </div>
   <div

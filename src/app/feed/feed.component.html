@@ -3,11 +3,11 @@
   <div class="flex flex-col flex-1 h-screen px-[40px] pt-[15px]">
     <div class="flex-none flex justify-between">
       <img src="../../assets/RENT.svg" alt="rent" />
-      <app-search />
+      <app-search (carSearchEvent)="getCarsByBrand($event)" />
     </div>
     <div class="flex-1 h-full">
-      <app-page (carEvent)="getCar($event)" />
+      <app-page  [cars]="searchedCars" (carEvent)="getCar($event)" />
     </div>
   </div>
-  <app-rightsidebar [carData]="selectedCar"/>
+  <app-rightsidebar *ngIf="selectedCar!=null" [carData]="selectedCar"/>
 </div>

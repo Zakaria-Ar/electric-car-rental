@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carousel, Dropdown, initTE } from 'tw-elements';
 
 @Component({
   selector: 'app-root',

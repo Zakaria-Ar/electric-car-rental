@@ -1,8 +1,8 @@
 
 <div class="lg:w-[321px] lg:h-screen bg-[#5159a525] hidden lg:block px-4 py-1">
   <div class="flex flex-col">
-    <div class="h-52 border border-[#ffffff2f] rounded-md">
-      <!-- maps -->
+    <div class="h-52 border overflow-hidden border-[#ffffff2f] rounded-md">
+
     </div>
     <div class="p-3 flex justify-between items-center">
       <p class="text-white text-2xl opacity-90">{{carData.carBrand +" "+carData.carModel}}</p>
@@ -39,7 +39,7 @@
       <div class="border border-[#ffffff2f] rounded-md text-[#ffffffc2] p-2">
         <i class="fa-solid fa-location-dot text-lg opacity-50"></i>
         <p class="font-light text-xs">Adrress</p>
-        <p class="text-lg opacity-80">{{carData.renter.renterCity}}</p>
+        <p class="text-lg opacity-80">{{carData.renter.renterCity.city}}</p>
       </div>
       <div class="col-span-2 bg-[#ffffff2f] rounded-md p-2 m-2 flex justify-between items-center">
         <p class="text-lg opacity-80 text-[#ffffffb6]">{{carData.pricePerDay}} Dh/day</p>

@@ -8,7 +8,11 @@ import { Car } from '../model/car.model';
 })
 export class FeedComponent{
   selectedCar! : Car
+  searchedCars! : Car[]
   getCar(car:Car){
     this.selectedCar=car
+  }
+  getCarsByBrand(cars:Car[]){
+    this.searchedCars = cars
   }
 }

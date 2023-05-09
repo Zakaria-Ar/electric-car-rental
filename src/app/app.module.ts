@@ -14,11 +14,11 @@ import { SearchComponent } from './search/search.component';
 import { RightsidebarComponent } from './rightsidebar/rightsidebar.component';
 import { PageComponent } from './page/page.component';
 import { CarcardComponent } from './carcard/carcard.component';
-import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { carsReducer } from './ngrx/car.reducer';
-import { CarsEffects } from './ngrx/car.effects';
+import { MapComponent } from './map/map.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { CarformComponent } from './carform/carform.component';
+import { RenterformComponent } from './renterform/renterform.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,14 +33,16 @@ import { CarsEffects } from './ngrx/car.effects';
     RightsidebarComponent,
     PageComponent,
     CarcardComponent,
+    MapComponent,
+    CarformComponent,
+    RenterformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({carsState:carsReducer}),
-    EffectsModule.forRoot([CarsEffects]),
-    StoreDevtoolsModule.instrument()
+    LeafletModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,13 +1,13 @@
 <div>
   <input class="hidden" (change)="onClick()" type="radio" name="cars" value="{{carData.carId}}" id="car-{{carData.carId}}">
   <label for="car-{{carData.carId}}">
-    <div class="p-3 bg-[#5159a525] h-56 rounded-2xl hover:cursor-pointer transition-all duration-200 ease-in-out hover:bg-[#5159a541]">
+    <div class="flex flex-col justify-between p-3 bg-[#5159a525] h-56 rounded-2xl hover:cursor-pointer transition-all duration-200 ease-in-out hover:bg-[#5159a541]">
       <div class="flex items-center gap-2">
         <i class="fa-solid fa-heart text-[#ffffffad] text-[12px]"></i>
         <span class="text-[#ffffffad] text-[10px]">80% Recommend</span>
       </div>
-      <div class="scale-75">
-        <img src="../../assets/tesla.png" alt="tesla" />
+      <div>
+        <img class="max-w-full w-56 m-auto" src="../../assets/tesla.png" alt="tesla" />
       </div>
       <div>
         <h1 class="font-bold text-[#ffffffe5] mb-2">{{carData.carBrand}}</h1>

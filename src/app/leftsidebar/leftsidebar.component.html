@@ -25,9 +25,27 @@
           ></i
         ></a>
       </div>
+      <div>
+          <button
+          (click)="showModal( )"
+          type="button"
+          class="inline-block"
+          data-te-toggle="modal"
+          data-te-target="#leftTopModal"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          <i class="fa-solid fa-plus text-[25px] text-[#ffffff50] hover:text-[#ffffffbb]"></i>
+        </button>
+      </div>
     </div>
     <div>
       <div class="bg-[#ffffff41] rounded-full w-10 h-10"></div>
     </div>
   </div>
+</div>
+<div [ngClass]="modal ? '' : 'hidden'">
+  <ng-container [ngSwitch]="component" >
+    <app-carform *ngSwitchCase="'car'" (modalEvent)="showModal() "/>
+    <app-renterform *ngSwitchCase="'renter'" (modalType)="changeModal()" (modalEvent)="showModal()"/>
+  </ng-container>
 </div>
